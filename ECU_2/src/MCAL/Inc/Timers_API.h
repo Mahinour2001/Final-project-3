@@ -65,6 +65,9 @@ extern DIO_LevelType Timer_Flag ;
 * \Parameters (in) : ConfigPtr              
 * \Parameters (out): void                                                      
 * \Return value:   : void
+* \Arguments Type  :None
+*  \Arguments Range:None
+*  \Arguments size :None
 *******************************************************************************/
 
 void Gpt_Init( const Gpt_ConfigType* ConfigPtr);
@@ -77,6 +80,9 @@ void Gpt_Init( const Gpt_ConfigType* ConfigPtr);
 * \Parameters (in) : Channel           
 * \Parameters (out): void                                                      
 * \Return value:   : void
+* \Arguments Type  :Channel-> typedef enum
+*  \Arguments Range:Channel-> 0-11
+*  \Arguments size :12
 *******************************************************************************/
 
 void Gpt_DisableNotification( Gpt_ChannelType Channel );
@@ -89,6 +95,9 @@ void Gpt_DisableNotification( Gpt_ChannelType Channel );
 * \Parameters (in) : Channel           
 * \Parameters (out): void                                                      
 * \Return value:   : void
+* \Arguments Type  :Channel-> typedef enum
+*  \Arguments Range:Channel-> 0-11
+*  \Arguments size :12
 *******************************************************************************/
 
 void Gpt_EnableNotification( Gpt_ChannelType Channel );
@@ -101,6 +110,9 @@ void Gpt_EnableNotification( Gpt_ChannelType Channel );
 * \Parameters (in) : Channel             
 * \Parameters (out): void                                                      
 * \Return value:   : void
+* \Arguments Type  :Channel-> typedef enum
+*  \Arguments Range:Channel-> 0-11
+*  \Arguments size :12
 *******************************************************************************/
 
 Gpt_ValueType Gpt_GetTimeElapsed( Gpt_ChannelType Channel );
@@ -113,6 +125,9 @@ Gpt_ValueType Gpt_GetTimeElapsed( Gpt_ChannelType Channel );
 * \Parameters (in) : Channel             
 * \Parameters (out): void                                                      
 * \Return value:   : void
+* \Arguments Type  :Channel-> typedef enum
+*  \Arguments Range:Channel-> 0-11
+*  \Arguments size :12
 *******************************************************************************/
 
 Gpt_ValueType Gpt_GetTimeRemaining( Gpt_ChannelType Channel );
@@ -125,6 +140,9 @@ Gpt_ValueType Gpt_GetTimeRemaining( Gpt_ChannelType Channel );
 * \Parameters (in) : Channel,Value            
 * \Parameters (out): void                                                      
 * \Return value:   : void
+* \Arguments Type  :Channel-> typedef enum ,Value-> typedef uint32
+*  \Arguments Range:Channel-> 0-11 , Value-> Norange
+*  \Arguments size :12 , uint32 (16bit)
 *******************************************************************************/
 
 void Gpt_StartTimer( Gpt_ChannelType Channel, Gpt_ValueType Value );
@@ -137,6 +155,9 @@ void Gpt_StartTimer( Gpt_ChannelType Channel, Gpt_ValueType Value );
 * \Parameters (in) : Channel           
 * \Parameters (out): void                                                      
 * \Return value:   : void
+* \Arguments Type  :Channel-> typedef enum
+*  \Arguments Range:Channel-> 0-11
+*  \Arguments size :12
 *******************************************************************************/
 
 void Gpt_StopTimer( Gpt_ChannelType Channel );

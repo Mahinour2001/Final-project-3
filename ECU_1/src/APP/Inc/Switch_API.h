@@ -8,6 +8,10 @@
 * \Parameters (in) : Switch_Id              
 * \Parameters (out): void                                                      
 * \Return value:   : void
+* \Arguments Type  :Switch_Id-> typedef struct
+*  \Arguments Range:Switch_Id-> 0-1000 
+*  \Arguments size :14
+
 *******************************************************************************/
 
 void Switch_init(Channel_Id_Types Switch_Id);
@@ -20,6 +24,9 @@ void Switch_init(Channel_Id_Types Switch_Id);
 * \Parameters (in) : ConfigPtr              
 * \Parameters (out): void                                                      
 * \Return value:   : void
+* \Arguments Type  :Switch_Id-> typedef struct
+*  \Arguments Range:Switch_Id-> 0-1000 
+*  \Arguments size :14
 *******************************************************************************/
 
 void Switch_SendState_20ms(Channel_Id_Types Switch_Id );

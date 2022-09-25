@@ -8,6 +8,9 @@
 * \Parameters (in) : ConfigPtr              
 * \Parameters (out): void                                                      
 * \Return value:   : void
+* \Arguments Type  : Sensor_Num->typedef enum 
+*  \Arguments Range: Sensor_Num->0-2 
+*  \Arguments size : Sensor_Num->typedef enum 
 *******************************************************************************/
 
 void DoorSensor_SendState_10ms( DoorSensor_Type Sensor_Num);

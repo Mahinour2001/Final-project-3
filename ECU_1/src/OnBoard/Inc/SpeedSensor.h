@@ -20,6 +20,9 @@ typedef uint32  Sensor_Read ;
 * \Parameters (in) : void              
 * \Parameters (out): void                                                      
 * \Return value:   : void
+* \Arguments Type  : None
+*  \Arguments Range: None
+*  \Arguments size : None
 *******************************************************************************/
 
 void SpeedSensor_Init(void);
@@ -32,6 +35,9 @@ void SpeedSensor_Init(void);
 * \Parameters (in) : ConfigPtr              
 * \Parameters (out): Sensor_Read                                                      
 * \Return value:   : Sensor_Read
+* \Arguments Type  : Sensor_Num->typedef enum , Sensor_Read->typedef uint32
+*  \Arguments Range: Sensor_Num->0-2 , Sensor_Read-> no range (Integer uint32)
+*  \Arguments size : Sensor_Num->typedef enum , Sensor_Read->typedef uint32
 *******************************************************************************/
 
 Sensor_Read SpeedSensor_ReadStatus( DoorSensor_Type Sensor_Num);

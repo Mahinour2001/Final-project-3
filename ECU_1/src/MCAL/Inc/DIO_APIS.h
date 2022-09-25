@@ -53,6 +53,9 @@ typedef uint32  DIO_PortLevelType ;
 * \Parameters (in) : ChannelId                     
 * \Parameters (out): DIO_LevelType                                                      
 * \Return value:   : DIO_LevelType
+* \Arguments Type  :ChannelId-> typedef struct
+*  \Arguments Range:Channel_Id-> 0-1000 
+*  \Arguments size :14
 *******************************************************************************/
 
 DIO_LevelType Dio_ReadChannel(Channel_Id_Types ChannelId);
@@ -65,6 +68,9 @@ DIO_LevelType Dio_ReadChannel(Channel_Id_Types ChannelId);
 * \Parameters (in) : ChannelId,Level                   
 * \Parameters (out): void                                                      
 * \Return value:   : void
+* \Arguments Type  :ChannelId-> typedef struct ,Level -> typedef enum
+*  \Arguments Range:Channel_Id-> 0-1000  , Level-> 0-1
+*  \Arguments size :Channel_Id->14 ,Level->2
 *******************************************************************************/
 
 void Dio_WriteChannel(Channel_Id_Types ChannelId,DIO_LevelType Level);
@@ -77,6 +83,9 @@ void Dio_WriteChannel(Channel_Id_Types ChannelId,DIO_LevelType Level);
 * \Parameters (in) : PortId                
 * \Parameters (out): DIO_PortLevelType                                                      
 * \Return value:   : DIO_PortLevelType
+* \Arguments Type  :PortId-> typedef enum 
+*  \Arguments Range:PortId-> 0-5  
+*  \Arguments size :PortId->6 
 *******************************************************************************/
 
 DIO_PortLevelType Dio_ReadPort(DIO_PortType PortId);
@@ -89,6 +98,9 @@ DIO_PortLevelType Dio_ReadPort(DIO_PortType PortId);
 * \Parameters (in) : PortId,Level                
 * \Parameters (out): void                                                      
 * \Return value:   : void
+* \Arguments Type  :PortId-> typedef enum , Level -> typedef enum
+*  \Arguments Range:PortId-> 0-5    , Level-> 0-1
+*  \Arguments size :PortId->6  , Level-> 2
 *******************************************************************************/
 
 void Dio_WritePort(DIO_PortType PortId,DIO_PortLevelType Level);
@@ -101,6 +113,9 @@ void Dio_WritePort(DIO_PortType PortId,DIO_PortLevelType Level);
 * \Parameters (in) :ChannelId              
 * \Parameters (out): DIO_LevelType                                                      
 * \Return value:   : DIO_LevelType
+* \Arguments Type  :ChannelId-> typedef struct
+*  \Arguments Range:Channel_Id-> 0-1000 
+*  \Arguments size :14
 *******************************************************************************/
 
 DIO_LevelType Dio_FlipChannel(Channel_Id_Types ChannelId);
